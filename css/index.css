@@ -1,0 +1,256 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --black40: rgba(0, 0, 0, 0.4);
+    --primary: #fF0EEED;
+    --secondary: #F0F0F0;
+    --red10: rgba(255, 51, 51, 0.1);
+    --header-font: "Integral CF Regular";
+    --body-font: 'Satoshi', sans-serif;
+}
+
+
+* {
+    font-family: var(--body-font);
+    margin: 0;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 12px;
+    padding: 10px 0 10px 0;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+
+}
+
+.promo a {
+    color: var(--white);
+    background-color: var(--black);
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+
+
+.promo i {
+    display: none;
+    color: var(--white);
+    background-color: var(--black);
+
+    @media (min-width: 768px) {
+        margin-left: 200px;
+        display: inline;
+    }
+
+}
+
+.navbar {
+    display: none;
+    background-color: var(--white);
+
+    @media (min-width: 768px) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.navbar a {
+    color: var(--black);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+        padding: 0 16px;
+        line-height: 96px;
+    }
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--black);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+
+    @media (min-width: 768px) {
+        height: 96px;
+    }
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: var(--secondary);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--black);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    line-height: unset !important;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--primary);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1440px;
+    background-color: var(--white);
+}
+
+.logo {
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+        padding: 0 16px;
+    }
+}
+
+.logo img {
+    width: 126px;
+    height: 18px;
+    padding: 0 16px;
+
+    @media (min-width: 768px) {
+        width: 160px;
+        height: 22px;
+    }
+}
+
+.search-input {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        margin: 24px 16px;
+        background-color: var(--secondary);
+        border: none;
+        outline: none;
+        border-radius: 62px;
+        width: 400px;
+        padding: 12px 16px
+    }
+}
+
+.search-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--body-font);
+    margin-left: 8px;
+    color: var(--black40);
+    background-color: transparent;
+}
+
+.icon {
+    color: var(--black40);
+}
+
+.navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    background-color: var(--white);
+    flex: 1;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background-color: var(--white);
+}
+
+.nav-icon {
+    color: var(--black);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 12px;
+}
+
+.navbar-mobile #myLink {
+    display: block;
+}
+
+
+
+.body {
+    margin-top: 100px;
+
+    @media (min-width: 728px) {
+        margin-top: 134px;
+    }
+}
+
+.banner {
+    background-image: url("../assets/images/mobile_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+
+    @media (min-width: 728px) {
+        background-image: url("../assets/images/desktop_bg.png");
+        height: 663px;
+    }
+}
+
+.header {
+    font-family: var(--header-font);
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--black);
+
+    @media (min-width: 728px) {
+        font-size: 64px;
+        max-width: 577px;
+    }
+}
